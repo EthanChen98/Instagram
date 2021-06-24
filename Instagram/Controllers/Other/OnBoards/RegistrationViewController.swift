@@ -1,8 +1,8 @@
 //
 //  RegistrationViewController.swift
-//  instagram
+//  Instagram
 //
-//  Created by Ethan Chen on 6/6/21.
+//  Created by Leo Chen on 6/23/21.
 //
 
 import UIKit
@@ -13,6 +13,7 @@ class RegistrationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
     }
     
 

@@ -34,6 +34,8 @@
 		AA4E7AC2266DF53300A26D2E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4E7ABE266DF53300A26D2E /* ProfileViewController.swift */; };
 		AA4E7AC3266DF53300A26D2E /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4E7ABF266DF53300A26D2E /* NotificationsViewController.swift */; };
 		AA4E7AC5266F39E500A26D2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA4E7AC4266F39E500A26D2E /* GoogleService-Info.plist */; };
+		AABF0FCD26844D8C00620964 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABF0FCC26844D8C00620964 /* RegistrationViewController.swift */; };
+		AAEC1A18267B0E020038075B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEC1A17267B0E020038075B /* Extensions.swift */; };
 		DE16F343040C6F06B4E93658 /* Pods_InstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1265AA109E06FDF5E60F14D9 /* Pods_InstagramTests.framework */; };
 		F58F045F0D42876E587F1680 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DC8141B49BFC74D19CD478 /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,8 @@
 		AA4E7ABE266DF53300A26D2E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AA4E7ABF266DF53300A26D2E /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		AA4E7AC4266F39E500A26D2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AABF0FCC26844D8C00620964 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		AAEC1A17267B0E020038075B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B5BAECF22950D69648D41CBF /* Pods-InstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramTests.debug.xcconfig"; path = "Target Support Files/Pods-InstagramTests/Pods-InstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2481E13A091D5D7E15A78FF /* Pods_Instagram_InstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram_InstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1610E990F5458ABE4D70B87 /* Pods-Instagram-InstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-InstagramUITests.release.xcconfig"; path = "Target Support Files/Pods-Instagram-InstagramUITests/Pods-Instagram-InstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,9 +179,9 @@
 		AA4E7A71266DF3C700A26D2E /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				AABF0FC826843B3100620964 /* Views */,
 				AA4E7AA6266DF44600A26D2E /* Resources */,
 				AA4E7AA3266DF41B00A26D2E /* Controllers */,
-				AA4E7AA2266DF3E000A26D2E /* Storyboards */,
 				AA4E7A80266DF3C800A26D2E /* Info.plist */,
 			);
 			path = Instagram;
@@ -204,7 +208,6 @@
 		AA4E7AA2266DF3E000A26D2E /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				AA4E7A7B266DF3C800A26D2E /* Assets.xcassets */,
 				AA4E7A7D266DF3C800A26D2E /* LaunchScreen.storyboard */,
 				AA4E7A78266DF3C700A26D2E /* Main.storyboard */,
 			);
@@ -258,6 +261,7 @@
 				AA49A3B22670778F0027FBF8 /* DatabaseManager.swift */,
 				AA49A3B4267078540027FBF8 /* AtuhManager.swift */,
 				AA49A3B6267078700027FBF8 /* StorageManager.swift */,
+				AAEC1A17267B0E020038075B /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -266,8 +270,18 @@
 			isa = PBXGroup;
 			children = (
 				AA4E7AB8266DF51000A26D2E /* LoginViewController.swift */,
+				AABF0FCC26844D8C00620964 /* RegistrationViewController.swift */,
 			);
 			path = OnBoards;
+			sourceTree = "<group>";
+		};
+		AABF0FC826843B3100620964 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA4E7A7B266DF3C800A26D2E /* Assets.xcassets */,
+				AA4E7AA2266DF3E000A26D2E /* Storyboards */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +356,7 @@
 				TargetAttributes = {
 					AA4E7A6E266DF3C700A26D2E = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					AA4E7A84266DF3C800A26D2E = {
 						CreatedOnToolsVersion = 12.5;
@@ -522,6 +537,8 @@
 				AA4E7AB5266DF4DD00A26D2E /* SearchResultViewController.swift in Sources */,
 				AA4E7AC3266DF53300A26D2E /* NotificationsViewController.swift in Sources */,
 				AA4E7A77266DF3C700A26D2E /* ViewController.swift in Sources */,
+				AAEC1A18267B0E020038075B /* Extensions.swift in Sources */,
+				AABF0FCD26844D8C00620964 /* RegistrationViewController.swift in Sources */,
 				AA4E7A73266DF3C700A26D2E /* AppDelegate.swift in Sources */,
 				AA49A3B5267078540027FBF8 /* AtuhManager.swift in Sources */,
 				AA4E7AB0266DF4DD00A26D2E /* SettingsViewController.swift in Sources */,
@@ -705,6 +722,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24TD2CXY6R;
 				INFOPLIST_FILE = Instagram/Info.plist;
@@ -714,6 +732,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leichen.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -725,6 +744,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24TD2CXY6R;
 				INFOPLIST_FILE = Instagram/Info.plist;

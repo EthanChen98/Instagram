@@ -28,7 +28,7 @@ class HomeViewController: UIViewController {
             // Show log in
             
             let logInVC = LoginViewController()
-            present(logInVC,animated: true)
+            present(logInVC, animated: true)
         }
     }
 }
